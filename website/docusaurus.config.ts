@@ -9,7 +9,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Sinux',
   tagline: 'A minimal 64-bit Unix-like operating system kernel, written from scratch in C and x86_64 Assembly.',
-  favicon: 'img/logo.svg',
+  favicon: 'img/sinux-logo.png',
 
   future: {
     v4: true,
@@ -34,7 +34,11 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fa'],
+    localeConfigs: {
+      en: {label: 'English', direction: 'ltr', htmlLang: 'en-US'},
+      fa: {label: 'فارسی', direction: 'rtl', htmlLang: 'fa-IR'},
+    },
   },
 
   presets: [
@@ -66,7 +70,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.svg',
+    image: 'img/sinux-logo.png',
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
@@ -75,7 +79,7 @@ const config: Config = {
       title: 'Sinux',
       logo: {
         alt: 'Sinux Logo',
-        src: 'img/logo.svg',
+        src: 'img/sinux-logo.png',
       },
       items: [
         {
@@ -85,6 +89,10 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Updates', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/CyberSinook/Sinux',
           label: 'GitHub',

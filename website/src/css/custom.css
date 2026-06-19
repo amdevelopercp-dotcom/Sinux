@@ -1,3 +1,6 @@
+/* Futuristic display font for the Sinux wordmark */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Vazirmatn:wght@400;500;700&display=swap');
+
 /**
  * Sinux theme — cyan + violet on deep space background.
  */
@@ -30,6 +33,13 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
 }
 
+/* Prevent horizontal scrolling / pinch-zoom drift on mobile */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .navbar {
   backdrop-filter: blur(10px);
   background: rgba(11, 14, 22, 0.7);
@@ -40,6 +50,16 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
+.navbar__logo {
+  height: 2rem;
+}
+
+.navbar__title {
+  font-family: 'Orbitron', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
 /* GitHub navbar icon */
 .navbar__item .navbar__link[href*='github.com']:hover {
   color: var(--ifm-color-primary);
@@ -47,4 +67,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Persian / RTL typography niceties */
+html[lang='fa-IR'] {
+  --ifm-font-family-base: 'Vazirmatn', system-ui, Tahoma, sans-serif;
 }

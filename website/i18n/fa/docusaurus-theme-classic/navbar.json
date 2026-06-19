@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Sinux",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "لوگوی Sinux",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "مستندات",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Updates": {
+    "message": "به‌روزرسانی‌ها",
+    "description": "Navbar item with label Updates"
+  },
+  "item.label.GitHub": {
+    "message": "گیت‌هاب",
+    "description": "Navbar item with label GitHub"
+  }
+}

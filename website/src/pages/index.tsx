@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
 import Hero from '@site/src/components/Hero';
 import Features from '@site/src/components/Features';
@@ -12,13 +13,17 @@ function QuickStart(): React.ReactElement {
     <section className={styles.quickstart}>
       <div className={styles.qsInner}>
         <div className={styles.qsText}>
-          <h2 className={styles.qsHeading}>Build &amp; boot in minutes</h2>
+          <h2 className={styles.qsHeading}>
+            <Translate id="qs.heading">Build &amp; boot in minutes</Translate>
+          </h2>
           <p className={styles.qsSub}>
-            Clone the repo, install the toolchain, and boot Sinux in QEMU. It runs on any
-            x86_64 Linux host.
+            <Translate id="qs.sub">
+              Clone the repo, install the toolchain, and boot Sinux in QEMU. It runs on any
+              x86_64 Linux host.
+            </Translate>
           </p>
           <Link className={styles.qsBtn} to="/docs/building/dependencies">
-            Full build guide →
+            <Translate id="qs.btn">Full build guide →</Translate>
           </Link>
         </div>
         <div className={styles.qsCode}>
